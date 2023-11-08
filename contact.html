@@ -42,17 +42,12 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const header = document.querySelector('header');
-    header.style.opacity = 0;
-    header.style.animation = 'fadeIn 1s forwards';
+    const elements = document.querySelectorAll('header, main, footer');
 
-    const main = document.querySelector('main');
-    main.style.opacity = 0;
-    main.style.animation = 'fadeIn 1s forwards';
-
-    const footer = document.querySelector('footer');
-    footer.style.opacity = 0;
-    footer.style.animation = 'fadeIn 1s forwards';
+    elements.forEach(element => {
+      element.style.opacity = 0;
+      element.style.animation = 'fadeIn 1s forwards';
+    });
   });
 </script>
 
