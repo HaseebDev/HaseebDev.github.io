@@ -1,11 +1,22 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f3f3f3;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+header, main, footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+}
+
+header {
+  background-color: #3498db;
+  color: #fff;
+}
+
+main {
+  margin: 20px auto;
 }
 
 .container {
@@ -15,38 +26,33 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 5px;
-  color: #555;
-}
-
 input,
 textarea {
-  padding: 8px;
-  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
+button {
+  background-color: #3498db;
+  color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
+button:hover {
+  background-color: #2980b9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
