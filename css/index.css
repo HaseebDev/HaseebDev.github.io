@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0; /* Set your desired background color */
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.main {
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background: #4CAF50; /* Set your desired button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #45a049; /* Change color on hover */
+}
+
+/* Keyframe animation example for buttons */
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button:nth-child(1) {
+    animation: buttonAnimation 2s infinite; /* Apply animation to button 1 */
+}
+
+.button:nth-child(2) {
+    animation: buttonAnimation 2s infinite alternate; /* Apply different animation to button 2 */
+}
+
+/* Add more nth-child selectors for more buttons */
+

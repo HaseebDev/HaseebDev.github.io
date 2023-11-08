@@ -1,0 +1,100 @@
+#apps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.app h3 {
+    margin-top: 0;
+}
+
+.app p {
+    margin-bottom: 15px;
+}
+
+.app a img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+
+}
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background to the body */
+body {
+    background-color: #f3f3f3; /* Set your desired background color */
+    font-family: 'Roboto', sans-serif; /* Use Google Fonts or any desired font family */
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 28px;
+}
+
+h1.store-heading {
+    display: flex;
+    align-items: center;
+    margin: 40px 0 20px 20px;
+}
+
+h1.store-heading.google-play {
+    background: #53c4e7; /* Color for Google Play heading */
+    color: #fff;
+}
+
+h1.store-heading.app-store {
+    background: #fbb034; /* Color for App Store heading */
+    color: #fff;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.app h3 {
+    margin-bottom: 10px;
+}
+
+.app p {
+    color: #666;
+}
+
+.app a {
+    display: block;
+    margin-top: 15px;
+}
+
+.app img {
+    width: 50px; /* Adjust size as needed */
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.app img:hover {
+    transform: scale(1.1);
+}
+
